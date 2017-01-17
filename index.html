@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
 <head>
-<script>
-  // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
-  (function(){
-    var redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect != location.href) {
-      history.replaceState(null, null, redirect);
-    }
-  })();
-</script>
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <meta charset="utf-8">
   <title>Angular2explore</title>
   <base href="/angular2explore/">
@@ -19,7 +19,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link href="styles.bundle.css" rel="stylesheet"/></head>
 <body>
-  <app-root>Loading...</app-root>
- <app-trial-component>SOmething</app-trial-component>
+<my-app>Loading...</my-app>
 <script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
 </html>
