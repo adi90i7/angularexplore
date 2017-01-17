@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { TrialComponentComponent } from './trial-component/trial-component.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TrialComponentComponent
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +17,6 @@ import { TrialComponentComponent } from './trial-component/trial-component.compo
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent,TrialComponentComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
